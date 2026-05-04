@@ -1,0 +1,64 @@
+:root {
+  color-scheme: dark;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at top, #1f2954 0%, #0b1020 65%);
+  color: #f4f7ff;
+}
+
+.game-wrap {
+  width: min(94vw, 920px);
+}
+
+.hud {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.6rem;
+}
+
+.stats {
+  display: flex;
+  gap: 14px;
+  font-size: 1rem;
+}
+
+#startBtn {
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(120deg, #53d1ff, #8a67ff);
+  color: white;
+  font-weight: 700;
+  padding: 10px 16px;
+  cursor: pointer;
+}
+
+#gameCanvas {
+  width: 100%;
+  border-radius: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  box-shadow: 0 20px 30px rgba(0, 0, 0, 0.35);
+  background: linear-gradient(#1a2244, #0d1227);
+}
+
+.tips {
+  opacity: 0.8;
+  text-align: center;
+}
