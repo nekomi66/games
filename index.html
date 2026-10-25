@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>经典切水果</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <main class="game-wrap">
+      <header class="hud">
+        <h1>🍉 经典切水果</h1>
+        <div class="stats">
+          <span>分数：<strong id="score">0</strong></span>
+          <span>生命：<strong id="lives">3</strong></span>
+          <span>连击：<strong id="combo">0</strong></span>
+        </div>
+        <button id="startBtn">开始游戏</button>
+      </header>
+      <canvas id="gameCanvas" width="900" height="600"></canvas>
+      <p class="tips">鼠标拖动或手指滑动切开水果。切到炸弹会立即失败！</p>
+    </main>
+
+    <script src="game.js"></script>
+  </body>
+</html>
